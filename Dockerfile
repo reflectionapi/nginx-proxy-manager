@@ -34,6 +34,7 @@ EXPOSE 80
 EXPOSE 81
 EXPOSE 443
 EXPOSE 9876
+EXPOSE 22
 
 HEALTHCHECK --interval=15s --timeout=3s CMD curl -f http://localhost:9876/health || exit 1
 
